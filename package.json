@@ -19,13 +19,22 @@
     "test": "./test.sh --single-run true",
     "prepush": "npm test",
     "travis-deploy-once": "travis-deploy-once",
-    "semantic-release": "semantic-release -d"
+    "semantic-release": "semantic-release"
   },
   "readme": "README.md",
   "config": {
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
     }
+  },
+  "peerDependencies": {
+    "@angular/core": ">= 5.0.0",
+    "@angular/common": ">= 5.0.0",
+    "@rd/core": ">= 7.0.0",
+    "moment": "2.x",
+    "moment-range": "2.x",
+    "moment-timezone": "0.x",
+    "rxjs": ">= 5.0.0"
   },
   "devDependencies": {
     "core-js": "2.5.2",
@@ -82,14 +91,5 @@
     "typescript": "~2.4.2",
     "travis-deploy-once": "^4.3.4",
     "semantic-release": "^12.4.1"
-  },
-  "peerDependencies": {
-    "@angular/core": ">= 5.0.0",
-    "@angular/common": ">= 5.0.0",
-    "@rd/core": ">= 7.0.0",
-    "moment": "2.x",
-    "moment-range": "2.x",
-    "moment-timezone": "0.x",
-    "rxjs": ">= 5.0.0"
   }
 }
