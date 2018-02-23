@@ -4,6 +4,7 @@
   "main": "bundles/datetime.umd.min.js",
   "repository": "https://github.com/chase2981/base-angular-lib",
   "typings": "datetime.d.ts",
+  "private": false,
   "author": {
     "name": "rd"
   },
