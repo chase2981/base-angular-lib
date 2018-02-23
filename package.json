@@ -19,7 +19,7 @@
     "test": "./test.sh --single-run true",
     "prepush": "npm test",
     "travis-deploy-once": "travis-deploy-once",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release -d"
   },
   "readme": "README.md",
   "config": {
