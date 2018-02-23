@@ -10,7 +10,7 @@ const moduleVersion = '7.0.0';
 
 
 export default {
-    input: `dist/${fileName}.js`,
+    input: `dist/public_api.js`,
     external: [
         '@angular/core',
         '@angular/common',
@@ -19,7 +19,8 @@ export default {
         'moment',
         'moment-range',
         'moment-timezone',
-        'rxjs/Rx'
+        'rxjs/Rx',
+        'jssha'
     ],
     output: {
         name: moduleName,

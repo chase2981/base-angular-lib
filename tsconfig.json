@@ -28,7 +28,7 @@
     ]
   },
   "files": [
-    "./build/datetime.ts"
+    "./build/public_api.ts"
   ],
   "include": [
     "./build/**/*.d.ts"
