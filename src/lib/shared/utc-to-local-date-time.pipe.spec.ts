@@ -4,10 +4,9 @@ import { TestBed, async, inject } from '@angular/core/testing';
 import { Observable } from 'rxjs/Rx';
 import { UtcToLocalDateTimePipe } from './utc-to-local-date-time.pipe';
 
-import { CoreApiService } from '../../shared';
-import { CoreApiServiceMock } from '../../testing';
+import { CoreApiService } from '@rd/core';
+import { CoreApiServiceMock } from '@rd/core/testing';
 
-import { RdAngularDatetimeModule } from '../datetime.module';
 import { TimezoneService } from './timezone.service';
 
 declare var moment;
@@ -21,7 +20,6 @@ describe('Pipe: UtcToLocalDateTime', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [RdAngularDatetimeModule],
       providers: [
         TimezoneService,
         { provide: CoreApiService, useValue: CoreApiServiceMock }

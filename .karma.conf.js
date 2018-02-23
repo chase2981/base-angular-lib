@@ -15,6 +15,7 @@ module.exports = function(config) {
     // Proxied base paths for loading assets
     proxies: {
       // required for modules fetched by SystemJS
+      '/node_modules/': '/base/node_modules/',
       '/base/node_modules/': './node_modules/'
     },
 
@@ -33,7 +34,10 @@ module.exports = function(config) {
       // Include all Angular dependencies
       {pattern: 'node_modules/ckeditor/**/*', included: false, watched: false},
       {pattern: 'node_modules/@angular/**/*', included: false, watched: false},
+      {pattern: 'node_modules/@rd/**/*', included: false, watched: false},
       {pattern: 'node_modules/rxjs/**/*', included: false, watched: false},
+      {pattern: 'node_modules/moment/min/moment.min.js', included: false, watched: false},
+      {pattern: 'node_modules/jssha/src/sha3.js', included: false, watched: false},
 
       // 'build/systemjs.config.js',
       'dist/browser-test-shim.js',

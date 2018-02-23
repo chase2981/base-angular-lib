@@ -17,12 +17,14 @@ var specFiles = Object.keys(__karma__.files).filter(isMaterialSpecFile);
 System.config({
   baseURL: baseDir,
   paths: {
-    'node:*': 'node_modules/*'
+    'node:*': '../node_modules/*'
   },
   map: {
     'ckeditor': 'node:ckeditor',
     'rxjs': 'node:rxjs',
     'main': 'main.js',
+    'moment': 'node:moment/min/moment.min.js',
+    'jssha': 'node:jssha/src/sha3.js',
 
     '@rd/core': 'node:@rd/core/bundles/core.umd.min.js',
     '@rd/core/testing': 'node:@rd/core/bundles/core-testing.umd.min.js',

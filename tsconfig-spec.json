@@ -1,17 +1,15 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
-    "target": "es5",
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "rootDir": "./build",
+    "sourceMap": true,
     "module": "umd",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "declaration": false,
-    "stripInternal": true,
     "experimentalDecorators": true,
-    "skipLibCheck": true,
-    "rootDir": "./build",
-    "baseUrl": ".",
-    "outDir": "./dist",
+    "declaration": false,
     "types": [
       "jasmine",
       "bootstrap",
@@ -27,10 +25,8 @@
       "es2015"
     ]
   },
-  "files": [
-    "./build/datetime.ts"
-  ],
   "include": [
+    "./build/datetime.ts",
     "./build/browser-test-shim.ts",
     "./build/systemjs.config.ts",
     "./build/**/*.d.ts",
