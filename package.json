@@ -16,7 +16,7 @@
     "build": "./build.sh",
     "commit": "git-cz",
     "test": "./test.sh --single-run true",
-    "prepush": "npm test && npm run build",
+    "prepush": "npm test",
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release"
   },
